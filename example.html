@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Our query</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  </head>
+  {# This is a short example to give you a quick overview of pongo2's syntax. #}
+  <p> Test the output of query: </p>
+  <div class="user_item">
+      <h2>Type name</h2>
+      <p> Type: {{ name }} </p>
+    <h2>Query</h2> 
+    {% if query %}
+        {% for qu in query %} 
+        <p>{{ qu }}</p>
+        {% endfor %}
+    {% else %}
+      <p>no query </p>
+    {% endif %}
+    </h2>
+
+  </body>
+</html>
